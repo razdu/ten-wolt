@@ -1,0 +1,31 @@
+<h2>Clients list</h2>
+<section class="addClient">
+    <h3>Add Client:</h3>
+    <label>Name:</label><input type="text" data-role="cName" /><br />
+    <label>Phone: </label><input type="tel" data-role="cPhone" /><br />
+    <label>Address: </label><input type="text" data-role="cAddress" /><br />
+    <label>VIP: </label><input type="checkbox" data-role="vip" /><br />
+    <button class="btn" data-role="cSave">Save Client</button>
+</section>
+<section>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>VIP?</th>
+        </thead>
+        <tbody>
+            {{#each clients}}
+                <tr value={{this._id}}>
+                    <td>{{@index}}</td>
+                    <td>{{this.name}}</td>
+                    <td>{{this.phone}}</td>
+                    <td>{{this.address}}</td>
+                    <td>{{this.isVip}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</section>

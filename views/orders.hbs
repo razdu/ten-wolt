@@ -1,0 +1,22 @@
+<h2>Orders list</h2>
+<div>
+    <a href="addData" class="btn">Add Client</a>
+</div>
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>VIP?</th>
+    </thead>
+    <tbody>
+        {{#each clients}}
+            <td>{{this._id}}</td>
+            <td>{{this.name}}</td>
+            <td>{{this.phone}}</td>
+            <td>{{this.address}}</td>
+            <td>{{this.isVip}}</td>
+        {{/each}}
+    </tbody>
+</table>

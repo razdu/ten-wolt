@@ -1,0 +1,24 @@
+{
+  "name": "hu_24.01_hw",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "dev": "npx nodemon node ."
+  },
+  "dependencies": {
+    "express": "4.17.2",
+    "mongoose": "6.1.8",
+    "nodemon": "2.0.15",
+    "fs-extra": "10.0.0",
+    "express-handlebars": "6.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "14.3.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
